@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (savedColor) {
     document.body.style.backgroundColor = savedColor;
     console.log("loaded saved color from cookie:", savedColor);
+  } else {
+    document.body.style.backgroundColor = "lightgreen"; // first visit default
+    console.log("first visit, default color applied");
   }
 
   // button click event
